@@ -1,6 +1,7 @@
-#language: pt
-Funcionalidade: Selecionar produto na loja
+# language: pt
+Funcionalidade: Selecionar Produto na Loja
 
+  @Loja
   Cenário: Selecao de produto com sucesso
     Dado que acesso a pagina inicial da loja
     Quando preencho o usuario como "standard_user"

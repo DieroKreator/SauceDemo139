@@ -7,10 +7,26 @@ namespace MyNamespace
     public class Steps
     {
         private readonly ScenarioContext _scenarioContext;
+        private IWebDriver driver;
 
         public Steps(ScenarioContext scenarioContext)
         {
             _scenarioContext = scenarioContext;
+        }
+
+        [BeforeScenario]
+        public void SetUp()
+        {
+            new DriverManager().SetUpDriver(new ChromeConfig());
+            driver = new ChromeDriver();
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromMilliseconds(10000);
+            _driver.Manage().Window.Maximize();
+        }
+
+        [AfterScenario]
+        public void TearDown()
+        {
+            _driver.Quit();
         }
 
         [Given(@"que acesso a pagina inicial da loja")]

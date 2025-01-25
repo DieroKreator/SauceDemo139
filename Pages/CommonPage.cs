@@ -1,3 +1,5 @@
+using OpenQA.Selenium;
+
 namespace SauceDemo139.Pages
 {
     public class CommonPage

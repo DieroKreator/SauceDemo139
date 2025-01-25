@@ -9,12 +9,12 @@ using WebDriverManager.DriverConfigs.Impl;
 namespace MyNamespace
 {
     [Binding]
-    public class Steps
+    public class StepDefinitions
     {
         private readonly ScenarioContext _scenarioContext;
         private IWebDriver driver;
 
-        public Steps(ScenarioContext scenarioContext)
+        public StepDefinitions(ScenarioContext scenarioContext)
         {
             _scenarioContext = scenarioContext;
         }
@@ -65,7 +65,7 @@ namespace MyNamespace
         [When(@"clico no icone do carrinho de compras")]
         public void QuandoClicoNoIconeDoCarrinhoDeCompras()
         {
-            driver.FindElement(By.Id("shopping_cart_container14")).Click();
+            driver.FindElement(By.Id("shopping_cart_container")).Click();
         }
 
         [Then(@"exibe ""(.*)"" no titulo da Selecao")]

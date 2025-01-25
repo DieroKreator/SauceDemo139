@@ -102,7 +102,7 @@ namespace SauceDemo139.Features
     testRunner.And("a senha \"secret_sauce\" e clico no botao login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 9
-    testRunner.Then("exibe \"Products\" no titulo da Selecao", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+    testRunner.Then("exibe \"Products\" no titulo da Selecao", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
 #line 10
     testRunner.When("adiciono o produto \"Sauce Labs Backpack\" ao carrinho", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
@@ -111,7 +111,7 @@ namespace SauceDemo139.Features
     testRunner.And("clico no icone do carrinho de compras", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 12
-    testRunner.Then("exibe a pagina do carrinho com a quantidade \"1\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+    testRunner.Then("exibe a pagina do carrinho com a quantidade \"1\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
 #line 13
     testRunner.And("nome do produto \"Sauce Labs Backpack\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");

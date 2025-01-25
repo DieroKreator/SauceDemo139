@@ -2,39 +2,29 @@ using OpenQA.Selenium;
 
 namespace SauceDemo139.Pages
 {
-    public class LoginPage
+    public class LoginPage : CommonPage
     {
-        private readonly IWebDriver _driver;
+        private IWebElement txtUsuario => _driver.FindElement(By.Id("user-name"));
+        private IWebElement txtSenha => _driver.FindElement(By.Id("password"));
+        private IWebElement btnLogin => _driver.FindElement(By.Id("login-button"));
 
-        // Locators
-        private readonly By _usernameField = By.Id("user-name");
-        private readonly By _passwordField = By.Id("password");
-        private readonly By _loginButton = By.Id("login-button");
-
-        public LoginPage(IWebDriver driver)
-        {
-            _driver = driver;
-        }
+        public LoginPage(IWebDriver driver) : base(driver){}
 
         // Methods
-        public void EnterUsername(string username)
+        public void PreencherUsuarioESenha(string usuario, string senha)
         {
-            _driver.FindElement(_usernameField).SendKeys(username);
+            txtUsuario.SendKeys(usuario);
+            txtSenha.SendKeys(senha);
         }
 
-        public void EnterPassword(string password)
+        public void ClicarNoBotaoLogin()
         {
-            _driver.FindElement(_passwordField).SendKeys(password);
+            btnLogin.Click();
         }
 
-        public void ClickLoginButton()
+        public void DarEnter()
         {
-            _driver.FindElement(_loginButton).Click();
-        }
-
-        public bool IsLoginButtonDisplayed()
-        {
-            return _driver.FindElement(_loginButton).Displayed;
+            txtSenha.SendKeys(Keys.Enter);
         }
     }
 }

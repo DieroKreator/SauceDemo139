@@ -41,12 +41,14 @@ namespace MyNamespace
         }
 
         [When(@"preencho o usuário como ""(.*)""")]
+        [When(@"preencho o ""(.*)""")]
         public void QuandoPreenchoOUsuarioComo(string username)
         {
             driver.FindElement(By.Id("user-name")).SendKeys(username);
         }
 
         [When(@"a senha ""(.*)"" e clico no botao login")]
+        [When(@"a ""(.*)"" e clico no botao login")]
         public void QuandoASenhaEClicoNoBotaoLogin(string password)
         {
             driver.FindElement(By.Id("password")).SendKeys(password);
@@ -55,6 +57,7 @@ namespace MyNamespace
         }
 
         [When(@"adiciono o produto ""(.*)"" ao carrinho")]
+        [When(@"adiciono o ""(.*)"" ao carrinho")]
         public void QuandoAdicionoOProdutoAoCarrinho(string product)
         {
             String productSelector = "add-to-cart-" + product.ToLower().Replace(" ", "-");
@@ -78,12 +81,14 @@ namespace MyNamespace
         }
 
         [Then(@"exibe a página do carrinho com a quantidade ""(.*)""")]
+        [Then(@"exibe a página do carrinho com a ""(.*)""")]
         public void EntaoExibeAPaginaDoCarrinhoComAQuantidade(string quantity)
         {
             Assert.That(driver.FindElement(By.CssSelector("div.cart_quantity")).Text, Is.EqualTo(quantity));
         }
 
         [Then(@"nome do produto ""(.*)""")]
+        [Then(@"nome do ""(.*)""")]
         public void EntaoNomeDoProduto(string product)
         {
             Assert.That(driver.FindElement(By.CssSelector("div.inventory_item_name")).Text, 

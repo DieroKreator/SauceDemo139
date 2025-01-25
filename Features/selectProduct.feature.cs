@@ -152,25 +152,25 @@ namespace SauceDemo139.Features
     testRunner.Given("que acesso a página inicial da loja", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 18
-    testRunner.When(string.Format("preencho o usuário como {0}", usuario), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+    testRunner.When(string.Format("preencho o {0}", usuario), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 19
-    testRunner.And(string.Format("a senha {0} e clico no botao login", senha), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+    testRunner.And(string.Format("a {0} e clico no botao login", senha), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 20
     testRunner.Then(string.Format("exibe {0} no titulo da Selecao", tituloSecao), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
 #line 21
-    testRunner.When(string.Format("adiciono o produto {0} ao carrinho", produto), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+    testRunner.When(string.Format("adiciono o {0} ao carrinho", produto), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 22
     testRunner.And("clico no icone do carrinho de compras", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 23
-    testRunner.Then(string.Format("exibe a página do carrinho com a quantidade {0}", quantidade), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+    testRunner.Then(string.Format("exibe a página do carrinho com a {0}", quantidade), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
 #line 24
-    testRunner.And(string.Format("nome do produto {0}", produto), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+    testRunner.And(string.Format("nome do {0}", produto), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 25
     testRunner.And(string.Format("o preco como {0}", preco), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");

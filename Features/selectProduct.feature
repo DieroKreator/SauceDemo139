@@ -15,13 +15,13 @@ Funcionalidade: Selecionar Produto na Loja
 
   Esquema do Cenario: Selecao de produto com sucesso DDT
     Dado que acesso a página inicial da loja
-    Quando preencho o usuário como <usuario>
-    E a senha <senha> e clico no botao login
+    Quando preencho o <usuario>
+    E a <senha> e clico no botao login
     Entao exibe <tituloSecao> no titulo da Selecao
-    Quando adiciono o produto <produto> ao carrinho
+    Quando adiciono o <produto> ao carrinho
     E clico no icone do carrinho de compras
-    Entao exibe a página do carrinho com a quantidade <quantidade>
-    E nome do produto <produto>
+    Entao exibe a página do carrinho com a <quantidade>
+    E nome do <produto>
     E o preco como <preco>
 
     Exemplos:

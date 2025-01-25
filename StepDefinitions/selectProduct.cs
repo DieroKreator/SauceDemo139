@@ -34,13 +34,13 @@ namespace MyNamespace
             driver.Quit();
         }
 
-        [Given(@"que acesso a pagina inicial da loja")]
+        [Given(@"que acesso a página inicial da loja")]
         public void DadoQueAcessoAPaginaInicialDaLoja()
         {
             driver.Navigate().GoToUrl("https://www.saucedemo.com");
         }
 
-        [When(@"preencho o usuario como ""(.*)""")]
+        [When(@"preencho o usuário como ""(.*)""")]
         public void QuandoPreenchoOUsuarioComo(string username)
         {
             driver.FindElement(By.Id("user-name")).SendKeys(username);
@@ -77,7 +77,7 @@ namespace MyNamespace
             Assert.That(driver.FindElement(By.CssSelector("span.title")).Text, Is.EqualTo(title));
         }
 
-        [Then(@"exibe a pagina do carrinho com a quantidade ""(.*)""")]
+        [Then(@"exibe a página do carrinho com a quantidade ""(.*)""")]
         public void EntaoExibeAPaginaDoCarrinhoComAQuantidade(string quantity)
         {
             Assert.That(driver.FindElement(By.CssSelector("div.cart_quantity")).Text, Is.EqualTo(quantity));

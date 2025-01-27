@@ -15,6 +15,11 @@ namespace Pages
         {
             this.driver = driver;
         }
+
+        public string LerTituloDaSecao()
+        {
+            return lblTituloSecao.Text;
+        }
     }
 }
         

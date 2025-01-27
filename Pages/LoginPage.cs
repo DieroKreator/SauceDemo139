@@ -1,12 +1,12 @@
 using OpenQA.Selenium;
 
-namespace SauceDemo139.Pages
+namespace Pages
 {
     public class LoginPage : CommonPage
     {
-        private IWebElement txtUsuario => _driver.FindElement(By.Id("user-name"));
-        private IWebElement txtSenha => _driver.FindElement(By.Id("password"));
-        private IWebElement btnLogin => _driver.FindElement(By.Id("login-button"));
+        private IWebElement txtUsuario => driver.FindElement(By.Id("user-name"));
+        private IWebElement txtSenha => driver.FindElement(By.Id("password"));
+        private IWebElement btnLogin => driver.FindElement(By.Id("login-button"));
 
         public LoginPage(IWebDriver driver) : base(driver){}
 

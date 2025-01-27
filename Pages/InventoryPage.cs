@@ -1,3 +1,4 @@
+using OpenQA.Selenium;
 
 namespace Pages
 {

@@ -1,10 +1,12 @@
+using OpenQA.Selenium;
+
 namespace Pages
 {
     public class CartPage : CommonPage
     {
         private IWebElement lblQuantidade => driver.FindElement(By.CssSelector("div.cart-quantity"));
         private IWebElement lblNomeProduto => driver.FindElement(By.CssSelector("div.inventory_item_name"));
-        private IWebElement lblPrecoProduto => driver.FindElement(By.CssSelector("div.inventory_item_price"));
+        private IWebElement lblPreco => driver.FindElement(By.CssSelector("div.inventory_item_price"));
 
         public CartPage(IWebDriver driver) : base(driver){}
 

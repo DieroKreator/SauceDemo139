@@ -17,6 +17,16 @@ namespace Pages
             txtSenha.SendKeys(senha);
         }
 
+        public void PreencherUsuario(string usuario)
+        {
+            txtUsuario.SendKeys(usuario);
+        }
+
+        public void PreencherSenha(string senha)
+        {
+            txtSenha.SendKeys(senha);
+        }
+
         public void ClicarNoBotaoLogin()
         {
             btnLogin.Click();

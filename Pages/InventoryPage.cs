@@ -14,7 +14,7 @@ namespace Pages
         // Métodos ou ações
         public void AdicionarAoCarrinho(string produto)
         {
-            String seletorProduto = "add-to-cart-" + produto.ToLower().Replace(" ", "_");
+            String seletorProduto = "add-to-cart-" + produto.ToLower().Replace(" ", "-");
             driver.FindElement(By.Id(seletorProduto)).Click();
         }
     }

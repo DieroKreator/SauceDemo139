@@ -12,7 +12,7 @@ namespace StepDefinitionsPO
         private ScenarioContext _scenarioContext;
         private IWebDriver driver;
 
-        public Hooks(ScenarioContext scenarioContext, IWebDriver driver)
+        public Hooks(ScenarioContext scenarioContext)
         {
             _scenarioContext = scenarioContext;
         }

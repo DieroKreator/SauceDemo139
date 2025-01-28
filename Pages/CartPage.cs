@@ -4,7 +4,7 @@ namespace Pages
 {
     public class CartPage : CommonPage
     {
-        private IWebElement lblQuantidade => driver.FindElement(By.CssSelector("div.cart-quantity"));
+        private IWebElement lblQuantidade => driver.FindElement(By.CssSelector("div.cart_quantity"));
         private IWebElement lblNomeProduto => driver.FindElement(By.CssSelector("div.inventory_item_name"));
         private IWebElement lblPreco => driver.FindElement(By.CssSelector("div.inventory_item_price"));
 
